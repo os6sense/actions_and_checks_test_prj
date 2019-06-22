@@ -5,4 +5,5 @@ workflow "CodeQuality" {
 
 action "os6sense/rubocop-action@master" {
   uses = "os6sense/rubocop-action@master"
+  secrets = ["GITHUB_TOKEN"]
 }
