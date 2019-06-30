@@ -1,8 +1,9 @@
 workflow "CodeQuality" {
   on = "push"
-  resolves = ["gimenete/rubocop-action@master"]
+  resolves = ["os6sense/rubocop-action@master"]
 }
 
-action "gimenete/rubocop-action@master" {
-  uses = "gimenete/rubocop-action@master"
+action "os6sense/rubocop-action@master" {
+  uses = "os6sense/rubocop-action@master"
+  secrets = ["GITHUB_TOKEN"]
 }
